@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G. Pavani | AI &amp; Machine Learning Portfolio</title>
+  <meta name="description" content="Portfolio of G. Pavani, a B.Tech Computer Science and Engineering (AI &amp; Machine Learning) student at Sir Padampat Singhania University, showcasing AI, Machine Learning, IoT, and software development projects.">
+  <meta name="keywords" content="G. Pavani, AISML, SPSU, AI, Machine Learning, portfolio, IoT, Python, data analytics, web development">
+  <meta name="author" content="G. Pavani">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="G. Pavani | AI &amp; Machine Learning Portfolio">
+  <meta property="og:description" content="Portfolio of G. Pavani, a B.Tech Computer Science and Engineering (AI &amp; Machine Learning) student at Sir Padampat Singhania University, showcasing AI, Machine Learning, IoT, and software development projects.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <a href="index.html">Pavani Portfolio</a>
+    </div>
+    <button id="menu-toggle" class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      Menu
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-main" role="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I'm G. Pavani</p>
+        <h1 id="hero-heading">AI &amp; Machine Learning Student Building Intelligent Solutions for Real-World Challenges</h1>
+        <p>I am an aspiring AI and Machine Learning Engineer passionate about developing innovative solutions using Artificial Intelligence, Machine Learning, IoT, and modern software technologies. I enjoy creating impactful projects that address real-world challenges and improve people's lives.</p>
+        <a class="cta-button" href="projects.html">View featured work</a>
+      </div>
+    </section>
+
+    <section class="skills section-block" aria-labelledby="skills-heading">
+      <header>
+        <h2 id="skills-heading">Skills</h2>
+        <p>Technical and soft skills that support AI, ML, IoT, and modern software development.</p>
+      </header>
+      <div class="skill-grid">
+        <article class="skill-card" aria-labelledby="skill-technical">
+          <h3 id="skill-technical">Technical Skills</h3>
+          <p>Python, Machine Learning, Artificial Intelligence, Data Analytics, HTML5, CSS3, JavaScript, Git &amp; GitHub, IoT, problem solving.</p>
+        </article>
+        <article class="skill-card" aria-labelledby="skill-soft">
+          <h3 id="skill-soft">Soft Skills</h3>
+          <p>Leadership, team management, communication, project coordination, and creative thinking.</p>
+        </article>
+        <article class="skill-card" aria-labelledby="skill-education">
+          <h3 id="skill-education">Academic Focus</h3>
+          <p>B.Tech Computer Science and Engineering student specializing in AI &amp; Machine Learning at SPSU, Udaipur.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured-projects section-block" aria-labelledby="projects-heading">
+      <header>
+        <h2 id="projects-heading">Featured Projects</h2>
+        <p>Projects demonstrating AI, IoT, and predictive analytics applied to real-world problems.</p>
+      </header>
+      <div class="project-list">
+        <article class="project-card" aria-labelledby="project-one-title">
+          <h3 id="project-one-title">Smart Water Leakage Detection System</h3>
+          <p>Developed a mobile SMS-based infrastructure monitoring system that detects water leakage and alerts users with location and time details.</p>
+          <a href="projects.html" class="project-link">Learn more</a>
+        </article>
+        <article class="project-card" aria-labelledby="project-two-title">
+          <h3 id="project-two-title">IoT-Based Smart Water Quality Monitoring Robot</h3>
+          <p>Designed an intelligent robotic system to monitor water quality parameters in real time using sensors and IoT technologies.</p>
+          <a href="projects.html" class="project-link">Learn more</a>
+        </article>
+        <article class="project-card" aria-labelledby="project-three-title">
+          <h3 id="project-three-title">Predictive Maintenance for Industrial Equipment</h3>
+          <p>Built a machine learning solution that predicts equipment failures before they occur to reduce downtime and improve maintenance efficiency.</p>
+          <a href="projects.html" class="project-link">Learn more</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <section class="footer-contact" aria-labelledby="footer-heading">
+      <h2 id="footer-heading">Connect with me</h2>
+      <p>Reach out for technology collaborations, internships, research opportunities, and AI/ML projects.</p>
+      <ul class="social-links" aria-label="Social media and email links">
+        <li><a href="https://www.linkedin.com/in/g-pavani-227a1a340/" aria-label="Visit LinkedIn profile">LinkedIn</a></li>
+        <li><a href="https://github.com/pavaniuser2230" aria-label="Visit GitHub profile">GitHub</a></li>
+        <li><a href="mailto:gurrampavani2006@gmail.com" aria-label="Send an email">Email</a></li>
+      </ul>
+    </section>
+    <p class="legal">© 2026 G. Pavani | B.Tech CSE (AIML) Student | Sir Padampat Singhania University</p>
+  </footer>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('primary-navigation');
+
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav-open');
+      });
+    }
+  </script>
+</body>
+</html>
