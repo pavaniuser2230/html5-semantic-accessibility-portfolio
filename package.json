@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This folder contains the portfolio website for G. Pavani, a B.Tech Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "axe-core": "^4.12.0",
+    "playwright": "^1.60.0"
+  }
+}

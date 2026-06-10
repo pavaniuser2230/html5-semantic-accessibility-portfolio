@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | G. Pavani</title>
+  <meta name="description" content="About G. Pavani, a B.Tech CSE AIML student at Sir Padampat Singhania University with AI, ML, IoT, and web development experience.">
+  <meta name="keywords" content="G. Pavani, B.Tech AIML, AI student, machine learning, IoT, data analytics, web development">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="About | G. Pavani">
+  <meta property="og:description" content="About G. Pavani, a B.Tech CSE AIML student at Sir Padampat Singhania University with AI, ML, IoT, and web development experience.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="http://localhost:8000/about.html">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "About G. Pavani",
+    "description": "About G. Pavani, a B.Tech CSE AIML student at Sir Padampat Singhania University.",
+    "url": "http://localhost:8000/about.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#about-main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <a href="index.html">Pavani Portfolio</a>
+    </div>
+    <button id="menu-toggle" class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      Menu
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="about-main" class="page-main" role="main">
+    <section class="intro" aria-labelledby="about-heading">
+      <h1 id="about-heading">About Me</h1>
+      <p>I am G. Pavani, a passionate B.Tech Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning at Sir Padampat Singhania University. I am interested in AI, Machine Learning, Data Analytics, IoT, and Web Development. I enjoy building innovative technology solutions that solve real-world problems and continuously improving my technical and problem-solving skills.</p>
+      <p>Based in Chittoor, Andhra Pradesh, India, I am focused on learning, building, and contributing to transformational AI projects.</p>
+    </section>
+
+    <section class="education section-block" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article aria-labelledby="education-degree">
+        <h3 id="education-degree">Bachelor of Technology (B.Tech)</h3>
+        <p>Computer Science and Engineering (Artificial Intelligence &amp; Machine Learning) at Sir Padampat Singhania University, Udaipur, Rajasthan.</p>
+      </article>
+      <article aria-labelledby="education-intermediate">
+        <h3 id="education-intermediate">Intermediate Education</h3>
+        <p>NRI Junior College, Tirupati.</p>
+      </article>
+    </section>
+
+    <section class="skills section-block" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="skill-grid">
+        <article class="skill-card" aria-labelledby="skill-technical">
+          <h3 id="skill-technical">Technical Skills</h3>
+          <p>Python, Machine Learning, Artificial Intelligence, Data Analytics, HTML5, CSS3, JavaScript, Git &amp; GitHub, IoT, problem solving.</p>
+        </article>
+        <article class="skill-card" aria-labelledby="skill-soft">
+          <h3 id="skill-soft">Soft Skills</h3>
+          <p>Leadership, teamwork, communication, project coordination, and creative thinking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="career-goals section-block" aria-labelledby="goals-heading">
+      <h2 id="goals-heading">Career Goals</h2>
+      <article aria-labelledby="goal-one">
+        <h3 id="goal-one">Become an AI/ML Engineer</h3>
+        <p>Work on impactful AI projects and develop innovative solutions with measurable outcomes.</p>
+      </article>
+      <article aria-labelledby="goal-two">
+        <h3 id="goal-two">Build Technology Products</h3>
+        <p>Create solutions that support employment, automation, and industry growth.</p>
+      </article>
+      <article aria-labelledby="goal-three">
+        <h3 id="goal-three">Collaborate Globally</h3>
+        <p>Pursue international opportunities and collaborate on global AI/ML initiatives.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2026 G. Pavani | B.Tech CSE (AIML) Student | Sir Padampat Singhania University</p>
+  </footer>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('primary-navigation');
+
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav-open');
+      });
+    }
+  </script>
+</body>
+</html>

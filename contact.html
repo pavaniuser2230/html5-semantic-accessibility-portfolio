@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | G. Pavani</title>
+  <meta name="description" content="Contact page for G. Pavani to discuss AI/ML projects, internships, collaborations, and research opportunities.">
+  <meta name="keywords" content="contact, G. Pavani, AI projects, internships, collaborations, research opportunities">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Contact | G. Pavani">
+  <meta property="og:description" content="Contact page for G. Pavani to discuss AI/ML projects, internships, collaborations, and research opportunities.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="http://localhost:8000/contact.html">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact G. Pavani",
+    "description": "Contact page for G. Pavani to discuss AI/ML projects, internships, and research opportunities.",
+    "url": "http://localhost:8000/contact.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contact-main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <a href="index.html">Pavani Portfolio</a>
+    </div>
+    <button id="menu-toggle" class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      Menu
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contact-main" class="page-main" role="main">
+    <section class="contact-intro" aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Get In Touch</h1>
+      <p>I am open to internships, collaborations, research opportunities, AI/ML projects, and innovative technology discussions. Feel free to contact me.</p>
+      <ul class="contact-details" aria-label="Contact details">
+        <li><strong>Phone:</strong> <a href="tel:+919573799056">+91 9573799056</a></li>
+        <li><strong>Email:</strong> <a href="mailto:gurrampavani2006@gmail.com">gurrampavani2006@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/g-pavani-227a1a340/">linkedin.com/in/g-pavani-227a1a340</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/pavaniuser2230">github.com/pavaniuser2230</a></li>
+      </ul>
+    </section>
+
+    <section class="contact-form-section section-block" aria-labelledby="form-heading">
+      <h2 id="form-heading">Send a message</h2>
+      <form class="contact-form" action="#" method="post">
+        <p class="field-help">Fields marked <span aria-hidden="true">*</span> are required.</p>
+
+        <div class="form-group">
+          <label for="name">Name<span aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="name-help" />
+          <p id="name-help" class="field-help">Please enter your full name.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email<span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="email-help" />
+          <p id="email-help" class="field-help">Use a valid email address so I can reply.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject<span aria-hidden="true">*</span></label>
+          <input id="subject" name="subject" type="text" autocomplete="organization-title" required aria-required="true" aria-describedby="subject-help" />
+          <p id="subject-help" class="field-help">Summarize the purpose of your message.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message<span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" autocomplete="off" required aria-required="true" aria-describedby="message-help"></textarea>
+          <p id="message-help" class="field-help">Describe your project, question, or collaboration request.</p>
+        </div>
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2026 G. Pavani | B.Tech CSE (AIML) Student | Sir Padampat Singhania University</p>
+  </footer>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('primary-navigation');
+
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav-open');
+      });
+    }
+  </script>
+</body>
+</html>
